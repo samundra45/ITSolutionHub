@@ -1,0 +1,170 @@
+.card_ap {
+  margin: 30px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card_ap:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_ap p {
+  margin-top: 10px;
+  font-size: 50px;
+  color: blueviolet;
+}
+
+.card_ap a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* POPUP */
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06d85f;
+  margin: 80px 0;
+}
+
+.box {
+  z-index: 1000;
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.edit_btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  /* margin-left: 130px; */
+}
+
+.button {
+  font-size: 0.5em;
+  padding: 5px;
+  color: #06d85f;
+  border: 2px solid #b6e2c9;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06d85f;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  z-index: 100;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.see_all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see_all a {
+  cursor: pointer;
+  padding-top: 15px;
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  margin-top: 50px;
+  padding: 0 10px;
+  background-color: #5b9bd1;
+  border-radius: 10px;
+}
+
+.see_all a:hover {
+  text-decoration: none;
+  color: #5b9bd1;
+  height: 30px;
+  margin-top: 50px;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid #5b9bd1;
+  border-radius: 10px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
